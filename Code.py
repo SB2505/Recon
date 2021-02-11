@@ -4,8 +4,8 @@ import streamlit as st
 from PIL import Image
 from pathlib import Path
 import os 
-img = Image.open(r"C:\Users\shahw\Downloads\Ecaps Final Logo corrected-01.png")
-st.sidebar.image(img, height=100,width=300) 
+#img = Image.open(r"C:\Users\shahw\Downloads\Ecaps Final Logo corrected-01.png")
+#st.sidebar.image(img, height=100,width=300) 
 st.title('Ecaps Reconcilaition')
 option=st.selectbox('Please Select Recon Name',('RazorpayX','Bankit','Paytm',"AEPS"))
 if option=='RazorpayX':
