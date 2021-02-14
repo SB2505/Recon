@@ -9,13 +9,12 @@ import os
 st.title('Ecaps Reconcilaition')
 option=st.selectbox('Please Select Recon Name',('RazorpayX','Bankit','Paytm',"AEPS"))
 if option=='RazorpayX':
-    home = str(Path.home())
-    path = home + "/Desktop/"
+    
     
 
     
 
-    def file_selector(folder_path=path):
+    def file_selector(folder_path=r"C:\Users\shahw\Desktop"):
 
         filenames = os.listdir(folder_path)
         selected_filename = st.selectbox('Please upload a vendor file', filenames)
@@ -24,7 +23,7 @@ if option=='RazorpayX':
     filenamer = file_selector()
     print(filenamer)
     st.write('You selected `%s`' % filenamer)
-    def file_selector123(path):
+    def file_selector123(folder_path=r"C:\Users\shahw\Desktop"):
         filenames1 = os.listdir(folder_path) 
         selected_filename = st.selectbox('Please upload a user file', filenames1)
         return os.path.join(folder_path, selected_filename)
