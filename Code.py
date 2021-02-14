@@ -4,6 +4,7 @@ import streamlit as st
 from PIL import Image
 from pathlib import Path
 import os 
+z=os.environ['USERPROFILE'] +  '/Desktop'
 #img = Image.open(r"C:\Users\shahw\Downloads\Ecaps Final Logo corrected-01.png")
 #st.sidebar.image(img, height=100,width=300) 
 st.title('Ecaps Reconcilaition')
@@ -14,7 +15,7 @@ if option=='RazorpayX':
 
     
 
-    def file_selector(folder_path=r"C:\Users\shahw\Desktop"):
+    def file_selector(folder_path=z):
 
         filenames = os.listdir(folder_path)
         selected_filename = st.selectbox('Please upload a vendor file', filenames)
@@ -23,7 +24,7 @@ if option=='RazorpayX':
     filenamer = file_selector()
     print(filenamer)
     st.write('You selected `%s`' % filenamer)
-    def file_selector123(folder_path=r"C:\Users\shahw\Desktop"):
+    def file_selector123(folder_path=z):
         filenames1 = os.listdir(folder_path) 
         selected_filename = st.selectbox('Please upload a user file', filenames1)
         return os.path.join(folder_path, selected_filename)
