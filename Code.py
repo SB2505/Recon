@@ -4,7 +4,7 @@ import streamlit as st
 from PIL import Image
 from pathlib import Path
 import os 
-z=os.environ['USERPROFILE'] +  '/Desktop'
+z=os.path.join(os.path.join(os.environ['USERPROFILE']), 'Desktop')
 #img = Image.open(r"C:\Users\shahw\Downloads\Ecaps Final Logo corrected-01.png")
 #st.sidebar.image(img, height=100,width=300) 
 st.title('Ecaps Reconcilaition')
