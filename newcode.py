@@ -31,3 +31,5 @@ else:
 df3=pd.DataFrame(result)
 st.write('Your Result is below',df3.T)
 
+
+
