@@ -31,7 +31,7 @@ if option=='RazorpayX':
         result.append(dic1)
     print(result)
     df11=pd.DataFrame(result)
-    st.write('Your Result is below',d11.T)
+    st.write('Your Result is below',df11.T)
 elif option=='Bankit':
     uploaded_razorpay_file = st.file_uploader("Upload Bankit file ",type=['xlsx'])
     uploaded_ecaps_file = st.file_uploader("Upload ecaps Files",type=['xlsx'])
